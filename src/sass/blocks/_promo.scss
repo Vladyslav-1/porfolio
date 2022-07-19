@@ -5,6 +5,10 @@
     background: url('../img/main-bg-2-min.png') no-repeat 50%/cover;
     padding-top: 205px;
     color: white;
+    &__stop-war {
+        position: absolute;
+        top: 0;
+    }
     &__title {
         width: 535px;
         margin-top: 10px;
