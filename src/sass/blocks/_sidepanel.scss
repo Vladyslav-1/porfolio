@@ -13,7 +13,6 @@
         &:hover {
             transform: scale(1.5,1.5);
             transition: .3s;
-            fill: $main-color;
             svg path {
                 fill: $main-color;
             }

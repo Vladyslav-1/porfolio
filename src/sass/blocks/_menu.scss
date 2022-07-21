@@ -18,6 +18,9 @@
         width: 36px;
     }
 }
+.hamburger.active {
+    display: none;
+}
 
 .menu {
     position: fixed;
