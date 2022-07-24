@@ -41,3 +41,10 @@ closeElem.addEventListener('click', () => {
     hamburger.classList.remove('active');
 });
 
+
+const counters = document.querySelectorAll('.counter'), 
+  lines = document.querySelectorAll('.scale')
+
+  counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+  });
