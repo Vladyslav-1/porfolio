@@ -1,0 +1,32 @@
+.price {
+    padding-top: 120px;
+    @include title-center;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    &__item {
+        margin-bottom: 15px;
+    }
+    &__item-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        position: relative;
+        padding-left: 25px;
+        @include before_circle;
+        &:before {
+            width: 15px;
+            height: 15px;
+            top: 4px;
+        }
+    }
+    &__descr {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 25px;
+    }
+}
