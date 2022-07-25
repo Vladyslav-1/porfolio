@@ -41,9 +41,9 @@ closeElem.addEventListener('click', () => {
     hamburger.classList.remove('active');
 });
 
-
-const counters = document.querySelectorAll('.counter'), 
-  lines = document.querySelectorAll('.scale')
+// scale
+const counters = document.querySelectorAll('.skills__wrapper-progress-item_h4 span'), 
+  lines = document.querySelectorAll('.scale');
 
   counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
