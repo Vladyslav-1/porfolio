@@ -26,6 +26,17 @@ document.addEventListener('scroll', () => {
   }
 })
 
+const linkShow = document.querySelectorAll('.sidepanel__link, .sidepanel__divider, .sidepanel__text')
+document.addEventListener('scroll', () => {
+  if (window.pageYOffset >=4000){
+    linkShow.forEach(el => el.style.display = 'none')
+  }else{
+    linkShow.forEach(el => el.style.display='')
+  }
+})
+
+
+
 // Hamburger
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
@@ -41,7 +52,7 @@ closeElem.addEventListener('click', () => {
     hamburger.classList.remove('active');
 });
 
-// scale
+// scale -- шкала автозаполнения
 const counters = document.querySelectorAll('.skills__wrapper-progress-item_h4 span'), 
   lines = document.querySelectorAll('.scale');
 

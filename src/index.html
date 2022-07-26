@@ -66,7 +66,6 @@
         <div class="sidepanel__divider"></div>
         <div class="sidepanel__text"><span>Социальные сети</span></div>
     </aside>
-
     <div class="menu">
         <div class="menu__block">
             <div class="menu__close">
@@ -108,7 +107,6 @@
         </div>
         <div class="menu__overlay"></div>
     </div>
-
     <section class="promo">
         <img src="img/stop-war-in-ukraine.png" class="promo__stop-war" alt="stop-war">
         <!-- hamburger -->
@@ -126,7 +124,6 @@
             </div>
         </div>
     </section>
-
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
@@ -174,7 +171,6 @@
             </div>
         </div>
     </section>
-
     <div class="resume">
         <div class="container">
             <h2 class="title title_fz16 title_center">Опыт</h2>
@@ -244,7 +240,6 @@
             </div>
         </div>
     </div>
-
    <section class="skills">
     <div class="container">
         <h2 class="title title_fz16 title_center">Навыки</h2>
@@ -353,7 +348,6 @@
         </div>
     </div>
    </section>
-
    <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title_center">Портфолио</h2>
@@ -383,7 +377,6 @@
             </div>
         </div>   
    </section>
-   
    <section class="price">
     <div class="container">
         <h2 class="title title_fz16 title_center">Прайс-лист</h2>
@@ -440,7 +433,6 @@
         </div>
     </div>
    </section>
-
    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
@@ -467,15 +459,15 @@
                         </a>
                     </div>
                     
-                    <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
+                    <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
 
@@ -483,12 +475,14 @@
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен (а) с <a href="policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
-
-                    
                 </div>
             </div>
         </div>
