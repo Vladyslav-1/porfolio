@@ -26,15 +26,15 @@ document.addEventListener('scroll', () => {
   }
 })
 
-const linkShow = document.querySelectorAll('.sidepanel__link, .sidepanel__divider, .sidepanel__text')
+// Плавное появление и исчезание элемента
+const linkShow = document.querySelector('.sidepanel')
 document.addEventListener('scroll', () => {
-  if (window.pageYOffset >=4000){
-    linkShow.forEach(el => el.style.display = 'none')
+  if (window.pageYOffset >=3500){
+    document.querySelector('.sidepanel').classList.add('hidden');
   }else{
-    linkShow.forEach(el => el.style.display='')
+    document.querySelector('.sidepanel').classList.remove('hidden');
   }
 })
-
 
 
 // Hamburger
