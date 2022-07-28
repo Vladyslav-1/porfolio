@@ -4,7 +4,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 370px);
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 60px;
     }
     &__item {

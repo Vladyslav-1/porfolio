@@ -55,7 +55,6 @@ closeElem.addEventListener('click', () => {
 // scale -- шкала автозаполнения
 const counters = document.querySelectorAll('.skills__wrapper-progress-item_h4 span'), 
   lines = document.querySelectorAll('.scale');
-
   counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
   });
